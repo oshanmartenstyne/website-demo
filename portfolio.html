@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfilio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/1e4cdf8b38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Threat Intelligence Analyst</p>
+            <h1>Hi,I'm <span>Oshan</span><br> Martenstyne from Sri Lanka</h1>
+        </div>
+    </div>
+
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello! I'm Oshan, a Threat Intelligence Analyst with a passion for uncovering cyber threats and helping organizations stay secure. With expertise in identifying, analyzing, and mitigating risks, I work to keep systems and data safe from emerging threats. I’m skilled in threat detection, incident response, and leveraging intelligence to anticipate potential security issues. Outside of work, I stay up-to-date with the latest in cybersecurity and enjoy tech blogs, hiking. Welcome to my portfolio—feel free to explore and connect!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cyber Threat Intelligence (CTI) </span><br> Collecting and analyzing information to understand and mitigate threats.</li>
+                        <li><span>Threat Hunting </span><br> Proactively identifying and investigating potential threats within systems.</li>
+                        <li><span>Malware Analysis </span><br> Examining malicious software to understand its behavior and impact.</li>
+                        <li><span>Incident Response </span><br> Handling and resolving security incidents effectively.</li>
+                        <li><span>OSINT (Open Source Intelligence) </span><br> Using public sources to gather actionable intelligence.</li>
+
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br>Work as a Information Security Threat Analyst in HDFC Bank</li>
+                        <li><span>2018-2021 </span><br>Work as a Cyber Security Analyst in Dialog Axiata</li>
+                       
+
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bsc(Hons) Cybersecurity </span><br>From Sri Lanka Technological Campus</li>
+                        <li><span>Certification in CCNP,CCNA</span><br>From Cisco Networking Academy</li>
+                        <li><span>Certified Ethical Hacker</span><br>In EC-Council</li>
+                        
+                        
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-virus"></i>
+                <h2>Threat Monitoring</h2>
+                <p>Keeping an eye on systems to detect any malicious activity or potential cyber threats.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Intelligence Collection & Analysis</h2>
+                <p>Gathering and analyzing data to identify emerging threats and vulnerabilities.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Incident Response</h2>
+                <p>Assisting during cyberattacks by providing intelligence and helping manage the situation to minimize damage.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work_1.jpg">
+                <div class="layer">
+                    <h3>Sample Threat Report on "Emotet Malware"</h3>
+                    <p>Emotet is a well-known modular banking Trojan that primarily spreads through phishing emails containing malicious attachments. This report analyzes the Emotet malware, its infection methods, and techniques for detection.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work_2(1).jpg">
+                <div class="layer">
+                    <h3>Malware Analysis Report on "TrickBot"</h3>
+                    <p>TrickBot is a banking Trojan often used in multi-stage attacks. This report covers an analysis of TrickBot’s behavior and capabilities in a controlled sandbox environment.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work_3.jpg">
+                <div class="layer">
+                    <h3>Automated Threat Intelligence Gathering Script (Python)</h3>
+                    <p>A Python script that automates the process of gathering threat intelligence data from open-source sources like VirusTotal, Shodan, and AbuseIPDB.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>oshanmartenstyne@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>077-5061423</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x-twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Oshan.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Ⓒ Oshan.Made with  <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+        
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+        
+    }
+</script> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVNPZS4Lc4TAnGK_32a1WYXSONyhmCM7D_o8eFCjZSfVfEPvKpPVf0TC-OTw08f_BYhQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>  
+</body>
+</html>
